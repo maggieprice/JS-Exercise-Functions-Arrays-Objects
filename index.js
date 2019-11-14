@@ -43,10 +43,10 @@ function makePersonObject(userid, username, useremail) {
   const human = { 
   id: userid,
   name: username,
-  email: useremail,
+  email: useremail
 }
 
-return human }
+return human; }
 
 
 /**
@@ -167,7 +167,8 @@ function getCarInfoByIndex(inventory, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(inventory) {
-  const cars = inventory;
+  const cars = {
+    inventory:inventory}
 return `This is a ${cars.car_make} ${cars.car_model}`;
 }
 
